@@ -1,7 +1,7 @@
 # Current (2014-2015) Marketing Site Screenshots
 
 - [Main site - techatnyu.org](http://techatnyu.org)
-- [Startup Week - nyusw.com](http://nyusw.org)
+- [Startup Week - nyusw.com](http://nyusw.com)
 - [DemoDays - demodays.co](http://demodays.co)
 - [Ship - ship.techatnyu.org](http://ship.techatnyu.org)
 
@@ -17,7 +17,7 @@
 
 Repo: https://github.com/TechAtNYU/tech-nyu-site
 
-- **Fonts**: Freight Sans
+- **Fonts**: Meta
 - **Accent colors**: current
 - **Initiative logos**: current (?)
 
@@ -28,7 +28,7 @@ Repo: https://github.com/TechAtNYU/startup-week
 
 First marketing site with a real integration with the API. First one-off marketing site using current brand consistently.
 
-- **Fonts**: Freight Sans Regular, Input Compressed Mono Regular, Meta Regular
+- **Fonts**: Meta Regular, Input Compressed Mono Regular, Freight
 - **Accent colors**: current Red, Orange, Blue, Yellow, Purple + grey palette
 - **Initiative logos**: N/A
 - **Motif**: Triangles and borders, movement/change

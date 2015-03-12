@@ -52,7 +52,7 @@ Repo: https://github.com/TechAtNYU/ship
 
 This iteration was designed around the Kim-- brand but in light of the Emanuel brand. The main font has been modified to suit the current brand. Styling and API integration will need to be reconsidered.
 
-- **Fonts**: Freight Sans Regular, League Gothic Italic, uppercase. Consider Input Mono Italics to replace League?
+- **Fonts**: Meta, League Gothic Italic, uppercase. Consider Input Mono Italics to replace League?
 - **Accent colors**: Blue palette adapted from Kim-- brand
 - **Initiative logos**: N/A
 - **Motif**: Custom origami boat logo. Ships and oceans (because what is modern tech@NYU without code puns)

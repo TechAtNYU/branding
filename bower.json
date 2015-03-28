@@ -1,0 +1,30 @@
+{
+  "name": "branding",
+  "version": "0.0.0",
+  "homepage": "https://github.com/TechAtNYU/branding",
+  "authors": [
+    "Iris Yuan <irisyuan@nyu.edu>"
+  ],
+  "description": "branding style",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "branding"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "branding",
+  "version": "1.0.0",
+  "description": "Tech@NYU styleguide and branding",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TechAtNYU/branding.git"
+  },
+  "keywords": [
+    "style",
+    "design",
+    "brand"
+  ],
+  "author": "Infrastructure",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TechAtNYU/branding/issues"
+  },
+  "homepage": "https://github.com/TechAtNYU/branding",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0"
+  }
+}

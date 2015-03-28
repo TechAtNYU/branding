@@ -1,0 +1,30 @@
+/* flexbox one option */
+
+/* make breakpoint specific responsive styles */
+
+@mixin flex-container($inline: false, $wrap: true) {
+  @if $inline==false {
+	  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	  display: -ms-flexbox;      /* TWEENER - IE 10 */
+	  display: -webkit-flex;     /* NEW - Chrome */
+	  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  }
+  
+  @if $wrap == true {
+     flex-wrap: wrap;
+  }
+}
+
+/** Supported types: lining, tabular, oldstyle */
+@mixin numeral-type($type: lining) {
+
+	$short: if($type=='lining', l, if($type=='tabular', t, o)); //next version: str-slice($type,0,1);
+ 
+	font-variant-numeric: #{$type}-nums; 
+	-moz-font-feature-settings: "#{$short}num=1"; 
+	-ms-font-feature-settings: "#{$short}num"; 
+	//-webkit-font-feature-settings: "#{$short}num";  //can't use this or chrome starts bugging out.
+	-o-font-feature-settings: "#{$short}num";
+	font-feature-settings: "#{$short}num";
+}

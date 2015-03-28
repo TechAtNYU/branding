@@ -1,0 +1,124 @@
+/* add description for this file */
+/* Reference: https://github.com/TechAtNYU/tech-nyu-site/blob/master/src/public/sass */
+
+/****** GRID BREAKPOINTS FOR MEDIA QUERIES - need more research ******/
+$xs-min: 0px;
+$xs-max: 479px;
+$sm-min: 480px;
+$sm-max: 669px;
+$md-min: 670px;
+$md-max: 959px;
+$lg-min: 960px;
+$lg-max: 1279px;
+$xl-min: 1280px;
+$xl-max: 1439px;
+$xxl-min: 1440px;
+$xxl-max: 9999px;
+
+/****** SPACING, PADDING, WHITESPACE *******/
+$whitespace-sm:20px;
+
+$padding-xs:20px;
+$padding-sm:20px;
+$padding-med:20px;
+$padding-lg:20px;
+$padding-xl:20px;
+
+
+/******************** COLORS ********************/
+
+$color-background: #FFF;
+
+/* Alt yellow, better for big areas: hsl(44, 86%, 56%) */ 
+$color-section: hsl(14, 68%, 51%) hsl(43, 90%, 50%) hsl(276, 48%, 35%)
+hsl(140, 74%, 37%) hsl(218, 66%, 36%) hsl(0, 0%, 10%);
+
+$color-body-text: #333;
+$color-active-nav-text: hsl(0, 0%, 97%);
+$color-inactive-text: hsl(13, 2%, 16%), hsl(42, 0%, 16%), hsl(278,3%,60%), hsl(140, 0%, 20%), hsl(214, 4%,65%), hsl(0,0%,58%);
+
+$color-logo-start: hsl(0,0, 95%);
+$color-logo-end: hsl(0, 0, lightness(nth($navInactiveTextColors, 1)));
+
+/* update with all colors from current brand colors */
+$color-success:#FFF;
+$color-error:#FFF;
+$color-blue:#FFF;
+$color-red:#FFF;
+$color-yellow:#FFF;
+
+/* add team-specific colors if they apply */
+
+/********** BASIC TYPOGRAPHY **********/
+
+$hyphenate-body: false;
+$use-opentype-features: true;
+
+/* ADD FONT STACKS HERE */
+$stack-heading: "ff-meta-web-pro";
+$stack-body: $stack-heading; //"franklin-gothic-urw";
+$open-sans: "Open Sans, helvetica, arial, sans-serif";
+$freight: "";
+$input-mono: "";
+$iput-sans: "";
+$meta: "";
+
+/*************** LOGO ******************/
+
+$logo-aspect-ratio: 3.2558;
+$logo-start-width: 200px;
+$logo-end-width: 115px;
+$logo-start-height: $logo-start-width/$logo-aspect-ratio;
+$logo-end-height: $logo-end-width/$logo-aspect-ratio;
+
+
+/*************** RWD ******************/
+@include rsConfigure((
+    scale:       13px 16px 19px 24px 30px 36px 44px 58px 64px,
+    lineHeights: 19px 22px 24px 29px 42px 47px 60px,
+    baseFontSize: 19px,
+    baseLineHeight: 27px,
+    baseMeasureWidth: 500px, //the measure based on which the baseLineHeight was chosen.
+    designs: (
+        (
+            name: mobile,
+            baseWidth: 320px,
+            minWidth: 0px,
+            maxWidth: 919px
+        ),
+        (   name: desktop,
+            baseWidth: 1010px,
+            minWidth: 920px,
+            maxWidth: 1400px,
+            shrinkTransforms: (zoom),
+            growTransforms: (zoom, zoom, stretch, stretch) //actually tested. two zooms is right.
+        )
+    )
+));
+
+
+/******************* WIDTHS ********************/
+
+/*
+$outerPaddingPx: 25px;
+$outerPadding: ($outerPaddingPx/map-get($rsConfig, baseFontSize))*1em;
+
+$homepageLeftColWidth: 20.25em;
+*/
+
+//types of elements. useful for setting margins etc
+$sectioning-elements: section, article, nav;
+
+@mixin to-in-flow-elems {
+	p, dl, ol, ul, li, dl, dt, dd, blockquote, figure, pre, table {
+		@content;
+	}
+}
+
+@mixin to-sectioning-elems {
+	article, section, header, footer, nav {
+		@content;
+	}
+}
+
+
